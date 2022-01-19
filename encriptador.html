@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="titulo">Código Secreto</h1>
+    <h3 class="info">Es una Web bastante sencilla de utilizar con el que podremos encriptar y desencriptar nuestros textos</h3>
+        <h3 id="">Mensaje Encriptado:</h3>
+        <input class="text-input" type="text" id="inputText" readonly="reandoly">
+        <button class="btn third" type="button" id="botonText" onclick="copyToClipBoard()">Copiar</button>
+        <br><br><br>
+        
+        <label for="input-texto">Solo letras minúsculas, sin acento</label>
+        <input class="text-input" type="text" id="inputText2" onkeypress="return validar(event)" placeholder="Ingrese el texto aqui">
+        <input class="btn third" type="button" id="botonText" onclick="enviarTexto()" value="Encriptar">
+        <input class="btn third" type="button" id="botonText" onclick="enviarTexto1()" value="Desencriptar">
+
+        <script src="enviar.js"></script>
+
+</body>
+<footer id="main-footer">
+    <div id="footer-info">Copyright © 2022 - Diseño Web realizado por <a class="link" href="https://www.linkedin.com/in/edibertocoronel/" target="_blank" rel="nofollow, noopener" >Ediberto Coronel</a><p>Challeger Oracle Logica de Programacion<a class="link" href="https://app.aluracursos.com/" target="_blank" rel="nofollow, noopener" title="Alura LATAM">Alura LATAM</a></p>
+    </div>
+</footer>
+</html>
