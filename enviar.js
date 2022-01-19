@@ -45,7 +45,7 @@ function validar(e) {
     if (tecla == 8) {
         return true;
     }
-    patron = /^[a-z\s]+$/g;
+    patron = /^[a-z0-9\s]+$/g;
     tecla_final = String.fromCharCode(tecla);
     return patron.test(tecla_final);
 }
