@@ -10,15 +10,18 @@
 <body>
     <h1 class="titulo">Código Secreto</h1>
     <h3 class="info">Es un programa bastante sencillo de utilizar con el que podremos encriptar y desencriptar nuestros textos</h3>
+    <div class="contenedor" >
         <h3 id="">Mensaje Encriptado:</h3>
         <input class="text-input" type="text" id="inputText" readonly="reandoly">
         <button class="btn third" type="button" id="botonText" onclick="copyToClipBoard()">Copiar</button>
-        <br><br><br>
+    </div>
         
+    <div class="contenedor">  
         <label for="input-texto">Solo letras minúsculas, sin acento</label>
         <input class="text-input" type="text" id="inputText2" onkeypress="return validar(event)" placeholder="Ingrese el texto aqui">
         <input class="btn third" type="button" id="botonText" onclick="enviarTexto()" value="Encriptar">
         <input class="btn third" type="button" id="botonText" onclick="enviarTexto1()" value="Desencriptar">
+    </div> 
 
         <script src="enviar.js"></script>
 
